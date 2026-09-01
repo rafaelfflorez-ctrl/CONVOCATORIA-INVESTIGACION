@@ -1,0 +1,6 @@
+{
+  "name": "Gemelo Digital Textil - Reciclado Químico con DES",
+  "description": "Gemelo digital y modelado multiescala con Redes Neuronales Gráficas (GNN) e IA Generativa (VAE) para reciclado químico de residuos textiles con solventes eutécticos profundos (DES) en la Universidad de Cartagena.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

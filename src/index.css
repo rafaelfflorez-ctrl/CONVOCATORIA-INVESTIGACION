@@ -1,0 +1,172 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0f17;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Print format for APA A4 research output */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 20mm 18mm 20mm 18mm;
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box !important;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    font-family: 'Times New Roman', Times, 'Liberation Serif', Georgia, serif !important;
+    font-size: 10.5pt !important;
+    line-height: 1.55 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: justify !important;
+    text-justify: inter-word !important;
+    overflow-wrap: break-word !important;
+    word-wrap: break-word !important;
+    hyphens: auto !important;
+  }
+
+  header, nav, footer, button, .print\:hidden {
+    display: none !important;
+  }
+
+  #area-informe-apa {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-wrap: break-word !important;
+    word-wrap: break-word !important;
+  }
+
+  #area-informe-apa * {
+    color: #0f172a !important;
+    background-color: transparent !important;
+    text-shadow: none !important;
+    box-sizing: border-box !important;
+  }
+
+  #area-informe-apa p {
+    text-align: justify !important;
+    text-justify: inter-word !important;
+    overflow-wrap: break-word !important;
+    word-wrap: break-word !important;
+    margin-top: 6pt !important;
+    margin-bottom: 6pt !important;
+    max-width: 100% !important;
+  }
+
+  #area-informe-apa .report-chart-container {
+    background-color: #ffffff !important;
+    border: 1px solid #cbd5e1 !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    max-width: 100% !important;
+    margin: 10pt 0 !important;
+  }
+
+  #area-informe-apa .report-chart-canvas {
+    filter: invert(0) !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  #area-informe-apa .apa-table {
+    width: 100% !important;
+    max-width: 100% !important;
+    table-layout: fixed !important;
+    border-collapse: collapse !important;
+    border-top: 1.5pt solid #0f172a !important;
+    border-bottom: 1.5pt solid #0f172a !important;
+    border-left: none !important;
+    border-right: none !important;
+    margin-top: 8pt !important;
+    margin-bottom: 8pt !important;
+    font-size: 9pt !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    overflow-wrap: break-word !important;
+  }
+
+  #area-informe-apa .apa-table thead tr {
+    border-bottom: 1pt solid #0f172a !important;
+  }
+
+  #area-informe-apa .apa-table th, 
+  #area-informe-apa .apa-table td {
+    padding: 3.5pt 5pt !important;
+    border-left: none !important;
+    border-right: none !important;
+    text-align: left !important;
+    overflow-wrap: break-word !important;
+    word-wrap: break-word !important;
+  }
+
+  #area-informe-apa .apa-table tbody tr {
+    border-bottom: 0.5pt solid #e2e8f0 !important;
+  }
+
+  #area-informe-apa .apa-table tbody tr:last-child {
+    border-bottom: none !important;
+  }
+
+  #area-informe-apa h1, 
+  #area-informe-apa h2, 
+  #area-informe-apa h3, 
+  #area-informe-apa h4 {
+    color: #000000 !important;
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+    max-width: 100% !important;
+    overflow-wrap: break-word !important;
+  }
+
+  #area-informe-apa section,
+  #area-informe-apa .page-break-inside-avoid {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    max-width: 100% !important;
+  }
+
+  #area-informe-apa .apa-badge {
+    border: 1px solid #94a3b8 !important;
+    color: #0f172a !important;
+    background: #f8fafc !important;
+  }
+}
